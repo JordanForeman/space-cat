@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		576C55481975E692001B2FEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C55471975E692001B2FEF /* Foundation.framework */; };
+		576C554A1975E692001B2FEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C55491975E692001B2FEF /* CoreGraphics.framework */; };
+		576C554C1975E692001B2FEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C554B1975E692001B2FEF /* UIKit.framework */; };
+		576C554E1975E692001B2FEF /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C554D1975E692001B2FEF /* SpriteKit.framework */; };
+		576C55541975E692001B2FEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 576C55521975E692001B2FEF /* InfoPlist.strings */; };
+		576C55561975E692001B2FEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C55551975E692001B2FEF /* main.m */; };
+		576C555A1975E692001B2FEF /* BTGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C55591975E692001B2FEF /* BTGAppDelegate.m */; };
+		576C555D1975E692001B2FEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576C555B1975E692001B2FEF /* Main.storyboard */; };
+		576C55601975E692001B2FEF /* BTGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C555F1975E692001B2FEF /* BTGViewController.m */; };
+		576C55631975E692001B2FEF /* BTGMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C55621975E692001B2FEF /* BTGMyScene.m */; };
+		576C55651975E693001B2FEF /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 576C55641975E693001B2FEF /* Spaceship.png */; };
+		576C55671975E693001B2FEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576C55661975E693001B2FEF /* Images.xcassets */; };
+		576C556E1975E693001B2FEF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C556D1975E693001B2FEF /* XCTest.framework */; };
+		576C556F1975E693001B2FEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C55471975E692001B2FEF /* Foundation.framework */; };
+		576C55701975E693001B2FEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C554B1975E692001B2FEF /* UIKit.framework */; };
+		576C55781975E693001B2FEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 576C55761975E693001B2FEF /* InfoPlist.strings */; };
+		576C557A1975E693001B2FEF /* Space_CatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C55791975E693001B2FEF /* Space_CatTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		576C55711975E693001B2FEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 576C553C1975E692001B2FEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 576C55431975E692001B2FEF;
+			remoteInfo = "Space Cat";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		576C55441975E692001B2FEF /* Space Cat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Cat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		576C55471975E692001B2FEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		576C55491975E692001B2FEF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		576C554B1975E692001B2FEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		576C554D1975E692001B2FEF /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		576C55511975E692001B2FEF /* Space Cat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Space Cat-Info.plist"; sourceTree = "<group>"; };
+		576C55531975E692001B2FEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		576C55551975E692001B2FEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		576C55571975E692001B2FEF /* Space Cat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Space Cat-Prefix.pch"; sourceTree = "<group>"; };
+		576C55581975E692001B2FEF /* BTGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTGAppDelegate.h; sourceTree = "<group>"; };
+		576C55591975E692001B2FEF /* BTGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTGAppDelegate.m; sourceTree = "<group>"; };
+		576C555C1975E692001B2FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		576C555E1975E692001B2FEF /* BTGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTGViewController.h; sourceTree = "<group>"; };
+		576C555F1975E692001B2FEF /* BTGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTGViewController.m; sourceTree = "<group>"; };
+		576C55611975E692001B2FEF /* BTGMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTGMyScene.h; sourceTree = "<group>"; };
+		576C55621975E692001B2FEF /* BTGMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTGMyScene.m; sourceTree = "<group>"; };
+		576C55641975E693001B2FEF /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		576C55661975E693001B2FEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		576C556C1975E693001B2FEF /* Space CatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space CatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		576C556D1975E693001B2FEF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		576C55751975E693001B2FEF /* Space CatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Space CatTests-Info.plist"; sourceTree = "<group>"; };
+		576C55771975E693001B2FEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		576C55791975E693001B2FEF /* Space_CatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Space_CatTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		576C55411975E692001B2FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576C554A1975E692001B2FEF /* CoreGraphics.framework in Frameworks */,
+				576C554C1975E692001B2FEF /* UIKit.framework in Frameworks */,
+				576C554E1975E692001B2FEF /* SpriteKit.framework in Frameworks */,
+				576C55481975E692001B2FEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576C55691975E693001B2FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576C556E1975E693001B2FEF /* XCTest.framework in Frameworks */,
+				576C55701975E693001B2FEF /* UIKit.framework in Frameworks */,
+				576C556F1975E693001B2FEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		576C553B1975E692001B2FEF = {
+			isa = PBXGroup;
+			children = (
+				576C554F1975E692001B2FEF /* Space Cat */,
+				576C55731975E693001B2FEF /* Space CatTests */,
+				576C55461975E692001B2FEF /* Frameworks */,
+				576C55451975E692001B2FEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		576C55451975E692001B2FEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				576C55441975E692001B2FEF /* Space Cat.app */,
+				576C556C1975E693001B2FEF /* Space CatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		576C55461975E692001B2FEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				576C55471975E692001B2FEF /* Foundation.framework */,
+				576C55491975E692001B2FEF /* CoreGraphics.framework */,
+				576C554B1975E692001B2FEF /* UIKit.framework */,
+				576C554D1975E692001B2FEF /* SpriteKit.framework */,
+				576C556D1975E693001B2FEF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		576C554F1975E692001B2FEF /* Space Cat */ = {
+			isa = PBXGroup;
+			children = (
+				576C55581975E692001B2FEF /* BTGAppDelegate.h */,
+				576C55591975E692001B2FEF /* BTGAppDelegate.m */,
+				576C555B1975E692001B2FEF /* Main.storyboard */,
+				576C555E1975E692001B2FEF /* BTGViewController.h */,
+				576C555F1975E692001B2FEF /* BTGViewController.m */,
+				576C55611975E692001B2FEF /* BTGMyScene.h */,
+				576C55621975E692001B2FEF /* BTGMyScene.m */,
+				576C55641975E693001B2FEF /* Spaceship.png */,
+				576C55661975E693001B2FEF /* Images.xcassets */,
+				576C55501975E692001B2FEF /* Supporting Files */,
+			);
+			path = "Space Cat";
+			sourceTree = "<group>";
+		};
+		576C55501975E692001B2FEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				576C55511975E692001B2FEF /* Space Cat-Info.plist */,
+				576C55521975E692001B2FEF /* InfoPlist.strings */,
+				576C55551975E692001B2FEF /* main.m */,
+				576C55571975E692001B2FEF /* Space Cat-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		576C55731975E693001B2FEF /* Space CatTests */ = {
+			isa = PBXGroup;
+			children = (
+				576C55791975E693001B2FEF /* Space_CatTests.m */,
+				576C55741975E693001B2FEF /* Supporting Files */,
+			);
+			path = "Space CatTests";
+			sourceTree = "<group>";
+		};
+		576C55741975E693001B2FEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				576C55751975E693001B2FEF /* Space CatTests-Info.plist */,
+				576C55761975E693001B2FEF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		576C55431975E692001B2FEF /* Space Cat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 576C557D1975E693001B2FEF /* Build configuration list for PBXNativeTarget "Space Cat" */;
+			buildPhases = (
+				576C55401975E692001B2FEF /* Sources */,
+				576C55411975E692001B2FEF /* Frameworks */,
+				576C55421975E692001B2FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Space Cat";
+			productName = "Space Cat";
+			productReference = 576C55441975E692001B2FEF /* Space Cat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		576C556B1975E693001B2FEF /* Space CatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 576C55801975E693001B2FEF /* Build configuration list for PBXNativeTarget "Space CatTests" */;
+			buildPhases = (
+				576C55681975E693001B2FEF /* Sources */,
+				576C55691975E693001B2FEF /* Frameworks */,
+				576C556A1975E693001B2FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				576C55721975E693001B2FEF /* PBXTargetDependency */,
+			);
+			name = "Space CatTests";
+			productName = "Space CatTests";
+			productReference = 576C556C1975E693001B2FEF /* Space CatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		576C553C1975E692001B2FEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BTG;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Better Than Great";
+				TargetAttributes = {
+					576C556B1975E693001B2FEF = {
+						TestTargetID = 576C55431975E692001B2FEF;
+					};
+				};
+			};
+			buildConfigurationList = 576C553F1975E692001B2FEF /* Build configuration list for PBXProject "Space Cat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 576C553B1975E692001B2FEF;
+			productRefGroup = 576C55451975E692001B2FEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				576C55431975E692001B2FEF /* Space Cat */,
+				576C556B1975E693001B2FEF /* Space CatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		576C55421975E692001B2FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576C55541975E692001B2FEF /* InfoPlist.strings in Resources */,
+				576C55671975E693001B2FEF /* Images.xcassets in Resources */,
+				576C55651975E693001B2FEF /* Spaceship.png in Resources */,
+				576C555D1975E692001B2FEF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576C556A1975E693001B2FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576C55781975E693001B2FEF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		576C55401975E692001B2FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576C55631975E692001B2FEF /* BTGMyScene.m in Sources */,
+				576C555A1975E692001B2FEF /* BTGAppDelegate.m in Sources */,
+				576C55561975E692001B2FEF /* main.m in Sources */,
+				576C55601975E692001B2FEF /* BTGViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576C55681975E693001B2FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576C557A1975E693001B2FEF /* Space_CatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		576C55721975E693001B2FEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 576C55431975E692001B2FEF /* Space Cat */;
+			targetProxy = 576C55711975E693001B2FEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		576C55521975E692001B2FEF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				576C55531975E692001B2FEF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		576C555B1975E692001B2FEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				576C555C1975E692001B2FEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		576C55761975E693001B2FEF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				576C55771975E693001B2FEF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		576C557B1975E693001B2FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		576C557C1975E693001B2FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		576C557E1975E693001B2FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Space Cat/Space Cat-Prefix.pch";
+				INFOPLIST_FILE = "Space Cat/Space Cat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		576C557F1975E693001B2FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Space Cat/Space Cat-Prefix.pch";
+				INFOPLIST_FILE = "Space Cat/Space Cat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		576C55811975E693001B2FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Space Cat.app/Space Cat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Space Cat/Space Cat-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Space CatTests/Space CatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		576C55821975E693001B2FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Space Cat.app/Space Cat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Space Cat/Space Cat-Prefix.pch";
+				INFOPLIST_FILE = "Space CatTests/Space CatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		576C553F1975E692001B2FEF /* Build configuration list for PBXProject "Space Cat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576C557B1975E693001B2FEF /* Debug */,
+				576C557C1975E693001B2FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		576C557D1975E693001B2FEF /* Build configuration list for PBXNativeTarget "Space Cat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576C557E1975E693001B2FEF /* Debug */,
+				576C557F1975E693001B2FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		576C55801975E693001B2FEF /* Build configuration list for PBXNativeTarget "Space CatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576C55811975E693001B2FEF /* Debug */,
+				576C55821975E693001B2FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 576C553C1975E692001B2FEF /* Project object */;
+}
