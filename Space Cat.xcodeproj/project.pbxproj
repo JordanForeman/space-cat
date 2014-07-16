@@ -16,14 +16,19 @@
 		576C555A1975E692001B2FEF /* BTGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C55591975E692001B2FEF /* BTGAppDelegate.m */; };
 		576C555D1975E692001B2FEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576C555B1975E692001B2FEF /* Main.storyboard */; };
 		576C55601975E692001B2FEF /* BTGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C555F1975E692001B2FEF /* BTGViewController.m */; };
-		576C55631975E692001B2FEF /* BTGMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C55621975E692001B2FEF /* BTGMyScene.m */; };
-		576C55651975E693001B2FEF /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 576C55641975E693001B2FEF /* Spaceship.png */; };
 		576C55671975E693001B2FEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576C55661975E693001B2FEF /* Images.xcassets */; };
 		576C556E1975E693001B2FEF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C556D1975E693001B2FEF /* XCTest.framework */; };
 		576C556F1975E693001B2FEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C55471975E692001B2FEF /* Foundation.framework */; };
 		576C55701975E693001B2FEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C554B1975E692001B2FEF /* UIKit.framework */; };
 		576C55781975E693001B2FEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 576C55761975E693001B2FEF /* InfoPlist.strings */; };
 		576C557A1975E693001B2FEF /* Space_CatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C55791975E693001B2FEF /* Space_CatTests.m */; };
+		576C55851975EDF9001B2FEF /* BTGTitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C55841975EDF9001B2FEF /* BTGTitleScene.m */; };
+		576C55881975EF1A001B2FEF /* BTGGamePlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C55871975EF1A001B2FEF /* BTGGamePlayScene.m */; };
+		576C558A1975F120001B2FEF /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 576C55891975F120001B2FEF /* Sprites.atlas */; };
+		57A617491975FB8A00B960A2 /* BTGMachineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A617481975FB8A00B960A2 /* BTGMachineNode.m */; };
+		57A6174C1975FD7A00B960A2 /* BTGSpaceCatNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6174B1975FD7A00B960A2 /* BTGSpaceCatNode.m */; };
+		57A6174F1976025E00B960A2 /* BTGProjectileNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6174E1976025E00B960A2 /* BTGProjectileNode.m */; };
+		57A6175319760B4100B960A2 /* BTGUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6175219760B4100B960A2 /* BTGUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,15 +56,25 @@
 		576C555C1975E692001B2FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		576C555E1975E692001B2FEF /* BTGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTGViewController.h; sourceTree = "<group>"; };
 		576C555F1975E692001B2FEF /* BTGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTGViewController.m; sourceTree = "<group>"; };
-		576C55611975E692001B2FEF /* BTGMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTGMyScene.h; sourceTree = "<group>"; };
-		576C55621975E692001B2FEF /* BTGMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTGMyScene.m; sourceTree = "<group>"; };
-		576C55641975E693001B2FEF /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		576C55661975E693001B2FEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		576C556C1975E693001B2FEF /* Space CatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space CatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		576C556D1975E693001B2FEF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		576C55751975E693001B2FEF /* Space CatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Space CatTests-Info.plist"; sourceTree = "<group>"; };
 		576C55771975E693001B2FEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		576C55791975E693001B2FEF /* Space_CatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Space_CatTests.m; sourceTree = "<group>"; };
+		576C55831975EDF9001B2FEF /* BTGTitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGTitleScene.h; sourceTree = "<group>"; };
+		576C55841975EDF9001B2FEF /* BTGTitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGTitleScene.m; sourceTree = "<group>"; };
+		576C55861975EF1A001B2FEF /* BTGGamePlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGGamePlayScene.h; sourceTree = "<group>"; };
+		576C55871975EF1A001B2FEF /* BTGGamePlayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGGamePlayScene.m; sourceTree = "<group>"; };
+		576C55891975F120001B2FEF /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		57A617471975FB8A00B960A2 /* BTGMachineNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGMachineNode.h; sourceTree = "<group>"; };
+		57A617481975FB8A00B960A2 /* BTGMachineNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGMachineNode.m; sourceTree = "<group>"; };
+		57A6174A1975FD7A00B960A2 /* BTGSpaceCatNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGSpaceCatNode.h; sourceTree = "<group>"; };
+		57A6174B1975FD7A00B960A2 /* BTGSpaceCatNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGSpaceCatNode.m; sourceTree = "<group>"; };
+		57A6174D1976025E00B960A2 /* BTGProjectileNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGProjectileNode.h; sourceTree = "<group>"; };
+		57A6174E1976025E00B960A2 /* BTGProjectileNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGProjectileNode.m; sourceTree = "<group>"; };
+		57A6175119760B4100B960A2 /* BTGUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGUtil.h; sourceTree = "<group>"; };
+		57A6175219760B4100B960A2 /* BTGUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,16 +136,21 @@
 		576C554F1975E692001B2FEF /* Space Cat */ = {
 			isa = PBXGroup;
 			children = (
-				576C55581975E692001B2FEF /* BTGAppDelegate.h */,
-				576C55591975E692001B2FEF /* BTGAppDelegate.m */,
-				576C555B1975E692001B2FEF /* Main.storyboard */,
-				576C555E1975E692001B2FEF /* BTGViewController.h */,
-				576C555F1975E692001B2FEF /* BTGViewController.m */,
-				576C55611975E692001B2FEF /* BTGMyScene.h */,
-				576C55621975E692001B2FEF /* BTGMyScene.m */,
-				576C55641975E693001B2FEF /* Spaceship.png */,
+				576C55831975EDF9001B2FEF /* BTGTitleScene.h */,
+				576C55841975EDF9001B2FEF /* BTGTitleScene.m */,
 				576C55661975E693001B2FEF /* Images.xcassets */,
+				576C55891975F120001B2FEF /* Sprites.atlas */,
 				576C55501975E692001B2FEF /* Supporting Files */,
+				576C55861975EF1A001B2FEF /* BTGGamePlayScene.h */,
+				576C55871975EF1A001B2FEF /* BTGGamePlayScene.m */,
+				57A617471975FB8A00B960A2 /* BTGMachineNode.h */,
+				57A617481975FB8A00B960A2 /* BTGMachineNode.m */,
+				57A6174A1975FD7A00B960A2 /* BTGSpaceCatNode.h */,
+				57A6174B1975FD7A00B960A2 /* BTGSpaceCatNode.m */,
+				57A6174D1976025E00B960A2 /* BTGProjectileNode.h */,
+				57A6174E1976025E00B960A2 /* BTGProjectileNode.m */,
+				57A6175119760B4100B960A2 /* BTGUtil.h */,
+				57A6175219760B4100B960A2 /* BTGUtil.m */,
 			);
 			path = "Space Cat";
 			sourceTree = "<group>";
@@ -138,6 +158,11 @@
 		576C55501975E692001B2FEF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				576C55581975E692001B2FEF /* BTGAppDelegate.h */,
+				576C55591975E692001B2FEF /* BTGAppDelegate.m */,
+				576C555B1975E692001B2FEF /* Main.storyboard */,
+				576C555E1975E692001B2FEF /* BTGViewController.h */,
+				576C555F1975E692001B2FEF /* BTGViewController.m */,
 				576C55511975E692001B2FEF /* Space Cat-Info.plist */,
 				576C55521975E692001B2FEF /* InfoPlist.strings */,
 				576C55551975E692001B2FEF /* main.m */,
@@ -243,7 +268,7 @@
 			files = (
 				576C55541975E692001B2FEF /* InfoPlist.strings in Resources */,
 				576C55671975E693001B2FEF /* Images.xcassets in Resources */,
-				576C55651975E693001B2FEF /* Spaceship.png in Resources */,
+				576C558A1975F120001B2FEF /* Sprites.atlas in Resources */,
 				576C555D1975E692001B2FEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,10 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				576C55631975E692001B2FEF /* BTGMyScene.m in Sources */,
+				57A6174C1975FD7A00B960A2 /* BTGSpaceCatNode.m in Sources */,
+				576C55851975EDF9001B2FEF /* BTGTitleScene.m in Sources */,
+				57A6174F1976025E00B960A2 /* BTGProjectileNode.m in Sources */,
 				576C555A1975E692001B2FEF /* BTGAppDelegate.m in Sources */,
 				576C55561975E692001B2FEF /* main.m in Sources */,
+				576C55881975EF1A001B2FEF /* BTGGamePlayScene.m in Sources */,
 				576C55601975E692001B2FEF /* BTGViewController.m in Sources */,
+				57A6175319760B4100B960A2 /* BTGUtil.m in Sources */,
+				57A617491975FB8A00B960A2 /* BTGMachineNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +503,7 @@
 				576C557F1975E693001B2FEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		576C55801975E693001B2FEF /* Build configuration list for PBXNativeTarget "Space CatTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +512,7 @@
 				576C55821975E693001B2FEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

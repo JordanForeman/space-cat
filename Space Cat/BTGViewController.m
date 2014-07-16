@@ -7,13 +7,13 @@
 //
 
 #import "BTGViewController.h"
-#import "BTGMyScene.h"
+#import "BTGTitleScene.h"
 
 @implementation BTGViewController
 
-- (void)viewDidLoad
+- (void)viewDidLayoutSubviews
 {
-    [super viewDidLoad];
+    [super viewDidLayoutSubviews];
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
@@ -21,11 +21,15 @@
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [BTGMyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [BTGTitleScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
     [skView presentScene:scene];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 - (BOOL)shouldAutorotate
