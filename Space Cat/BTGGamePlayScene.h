@@ -8,7 +8,7 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface BTGGamePlayScene : SKScene
+@interface BTGGamePlayScene : SKScene <SKPhysicsContactDelegate>
 
 - (void) shootProjectileTowardsPosition:(CGPoint)position;
 - (void) animateSpaceCat;
