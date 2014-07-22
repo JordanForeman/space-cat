@@ -13,6 +13,7 @@
 + (instancetype) machineAtPosition:(CGPoint)position {
 	BTGMachineNode *machine = [self spriteNodeWithImageNamed:@"machine_1"];
 	machine.position = position;
+	machine.zPosition = 8;
 	machine.anchorPoint = CGPointMake(0.5, 0);
 	machine.name = @"Machine";
 	

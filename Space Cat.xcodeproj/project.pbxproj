@@ -18,6 +18,7 @@
 		572D9998197DC9A70023C2DC /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 572D9996197DC9A70023C2DC /* Explosion.sks */; };
 		572D9999197DC9A70023C2DC /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 572D9997197DC9A70023C2DC /* spark.png */; };
 		572D999C197DCBE80023C2DC /* BTGHUDNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 572D999B197DCBE80023C2DC /* BTGHUDNode.m */; };
+		572D999F197DF8490023C2DC /* BTGGameOverNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 572D999E197DF8490023C2DC /* BTGGameOverNode.m */; };
 		5767631F1979CD2100260585 /* BTGSpaceDogNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5767631E1979CD2100260585 /* BTGSpaceDogNode.m */; };
 		576763221979D55000260585 /* BTGGroundNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 576763211979D55000260585 /* BTGGroundNode.m */; };
 		576C55481975E692001B2FEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C55471975E692001B2FEF /* Foundation.framework */; };
@@ -67,6 +68,8 @@
 		572D9997197DC9A70023C2DC /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		572D999A197DCBE80023C2DC /* BTGHUDNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGHUDNode.h; sourceTree = "<group>"; };
 		572D999B197DCBE80023C2DC /* BTGHUDNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGHUDNode.m; sourceTree = "<group>"; };
+		572D999D197DF8490023C2DC /* BTGGameOverNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGGameOverNode.h; sourceTree = "<group>"; };
+		572D999E197DF8490023C2DC /* BTGGameOverNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGGameOverNode.m; sourceTree = "<group>"; };
 		5767631D1979CD2100260585 /* BTGSpaceDogNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGSpaceDogNode.h; sourceTree = "<group>"; };
 		5767631E1979CD2100260585 /* BTGSpaceDogNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGSpaceDogNode.m; sourceTree = "<group>"; };
 		576763201979D55000260585 /* BTGGroundNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGGroundNode.h; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 				572D9997197DC9A70023C2DC /* spark.png */,
 				572D999A197DCBE80023C2DC /* BTGHUDNode.h */,
 				572D999B197DCBE80023C2DC /* BTGHUDNode.m */,
+				572D999D197DF8490023C2DC /* BTGGameOverNode.h */,
+				572D999E197DF8490023C2DC /* BTGGameOverNode.m */,
 			);
 			path = "Space Cat";
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				576C55601975E692001B2FEF /* BTGViewController.m in Sources */,
 				576763221979D55000260585 /* BTGGroundNode.m in Sources */,
 				57A6175319760B4100B960A2 /* BTGUtil.m in Sources */,
+				572D999F197DF8490023C2DC /* BTGGameOverNode.m in Sources */,
 				57A617491975FB8A00B960A2 /* BTGMachineNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

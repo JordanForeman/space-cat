@@ -19,7 +19,7 @@ typedef NS_OPTIONS(NSUInteger, BTGBuildTarget) {
 	BTGDevelopmentBuild					= 1
 };
 
-static const int BTGMAX_LIVES = 5;
+static const int BTGMAX_LIVES = 1;
 
 typedef NS_OPTIONS(uint32_t, BTGCollisionCategory) {
     BTGCollisionCategoryEnemy			= 1 << 0,		// 0000

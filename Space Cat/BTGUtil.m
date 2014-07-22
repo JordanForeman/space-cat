@@ -15,8 +15,8 @@
 }
 
 + (BTGBuildTarget) getBuildTarget {
-	//return BTGDevelopmentBuild;
-	return BTGProductionBuild;
+	return BTGDevelopmentBuild;
+	//return BTGProductionBuild;
 }
 
 @end

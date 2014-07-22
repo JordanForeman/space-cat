@@ -54,12 +54,12 @@
 	self.score	+= points;
 	
 	SKLabelNode *scoreLabel = (SKLabelNode*)[self childNodeWithName:@"Score"];
-	scoreLabel.text = [NSString stringWithFormat:@"%d", self.score];
+	scoreLabel.text = [NSString stringWithFormat:@"%ld", (long)self.score];
 }
 
 - (BOOL) loseLife {
 	if (self.lives > 0) {
-		NSString *lifeNodeName = [NSString stringWithFormat:@"Life%d", self.lives];
+		NSString *lifeNodeName = [NSString stringWithFormat:@"Life%ld", (long)self.lives];
 		SKNode *lifeToRemove = [self childNodeWithName:lifeNodeName];
 		[lifeToRemove removeFromParent];
 		self.lives--;

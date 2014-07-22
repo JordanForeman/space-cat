@@ -14,6 +14,7 @@
 #import "BTGGroundNode.h"
 #import "BTGUtil.h"
 #import "BTGHUDNode.h"
+#import "BTGGameOverNode.h"
 
 #import <AVFoundation/AVFoundation.h>
 
@@ -30,6 +31,10 @@
 @property (nonatomic) SKAction *laserSFX;
 
 @property (nonatomic) AVAudioPlayer *backgroundMusic;
+@property (nonatomic) AVAudioPlayer *gameOverMusic;
+
+@property (nonatomic) BOOL gameOver;
+@property (nonatomic) BOOL restart;
 
 @end
 
@@ -83,10 +88,14 @@
 - (void) setupSounds {
 	
 	NSURL *url = [[NSBundle mainBundle] URLForResource:@"Gameplay" withExtension:@"mp3"];
-	
 	self.backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
 	self.backgroundMusic.numberOfLoops = -1; // Play infinitely
 	[self.backgroundMusic prepareToPlay];
+	
+	NSURL *gameOverUrl = [[NSBundle mainBundle] URLForResource:@"GameOver" withExtension:@"mp3"];
+	self.gameOverMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:gameOverUrl error:nil];
+	self.gameOverMusic.numberOfLoops = 1; // Play infinitely
+	[self.gameOverMusic prepareToPlay];
 	
 	self.damageSFX = [SKAction playSoundFileNamed:@"Damage.caf" waitForCompletion:NO];
 	self.explodeSFX = [SKAction playSoundFileNamed:@"Explode.caf" waitForCompletion:NO];
@@ -109,12 +118,16 @@ SKScene Implementation
 	}
 	
 	// Add SpaceDogs
-	if ( self.timeSinceEnemyAdded > self.addEnemyTimeInterval) {
+	if ( self.timeSinceEnemyAdded > self.addEnemyTimeInterval && !self.gameOver) {
 		[self addSpaceDog];
 		self.timeSinceEnemyAdded = 0;
 	}
 	
 	[self alterDifficultyIfApplicable];
+	
+	if (self.gameOver && !self.restart) {
+		[self performGameOver];
+	}
 	
 	self.lastUpdateTimeInterval = currentTime;
 	
@@ -141,11 +154,21 @@ SKScene Implementation
 }
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-	for (UITouch *touch in touches) {
-		CGPoint position = [touch locationInNode:self];
+	
+	if(self.restart) {
+		for (SKNode *node in [self children]) {
+			[node removeFromParent];
+		}
 		
-		[self shootProjectileTowardsPosition:position];
-		[self animateSpaceCat];
+		BTGGamePlayScene *gamePlayScene = [BTGGamePlayScene sceneWithSize:self.frame.size];
+		[self.view presentScene:gamePlayScene];
+	} else if (!self.gameOver) {
+		for (UITouch *touch in touches) {
+			CGPoint position = [touch locationInNode:self];
+		
+			[self shootProjectileTowardsPosition:position];
+			[self animateSpaceCat];
+		}
 	}
 	
 }
@@ -241,7 +264,7 @@ SKScene Implementation
 	
 	for (int i = 0; i < numberOfPieces; i++) {
 		NSInteger randomPiece = [BTGUtil randomWithMin:1 max:4];
-		NSString *imageName = [NSString stringWithFormat:@"debri_%d", randomPiece];
+		NSString *imageName = [NSString stringWithFormat:@"debri_%ld", (long)randomPiece];
 		
 		SKSpriteNode *debris = [SKSpriteNode spriteNodeWithImageNamed:imageName];
 		debris.position = position;
@@ -269,7 +292,7 @@ SKScene Implementation
 
 - (void) loseLife {
 	BTGHUDNode *hud = (BTGHUDNode*)[self childNodeWithName:@"hud"];
-	[hud loseLife];
+	self.gameOver = [hud loseLife];
 }
 
 - (void) createExplosionAtPosition:(CGPoint)position {
@@ -283,6 +306,13 @@ SKScene Implementation
 		[explosion removeFromParent];
 	}];
 	
+}
+
+- (void) performGameOver {
+	BTGGameOverNode *gameOver = [BTGGameOverNode gameOverAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))];
+	[self addChild:gameOver];
+	self.restart = YES;
+	[self.gameOverMusic play];
 }
 
 @end

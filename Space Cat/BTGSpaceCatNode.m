@@ -18,6 +18,7 @@
 	BTGSpaceCatNode *spaceCat = [self spriteNodeWithImageNamed:@"spacecat_1"];
 	spaceCat.anchorPoint = CGPointMake(0.5, 0);
 	spaceCat.position = position;
+	spaceCat.zPosition = 9;
 	spaceCat.name = @"SpaceCat";
 	
 	return spaceCat;
