@@ -14,4 +14,9 @@
 	return arc4random()%(max - min) + min;
 }
 
++ (BTGBuildTarget) getBuildTarget {
+	//return BTGDevelopmentBuild;
+	return BTGProductionBuild;
+}
+
 @end

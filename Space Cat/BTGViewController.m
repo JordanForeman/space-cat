@@ -8,6 +8,7 @@
 
 #import "BTGViewController.h"
 #import "BTGTitleScene.h"
+#import "BTGUtil.h"
 
 @implementation BTGViewController
 
@@ -17,8 +18,8 @@
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
+    skView.showsFPS = ([BTGUtil getBuildTarget] == BTGProductionBuild) ? NO : YES;
+    skView.showsNodeCount = ([BTGUtil getBuildTarget] == BTGProductionBuild) ? NO : YES;
     
     // Create and configure the scene.
     SKScene * scene = [BTGTitleScene sceneWithSize:skView.bounds.size];
